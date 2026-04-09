@@ -7,9 +7,9 @@ Python
 Django
 SQLite
 HTML/CSS
-💾 Banco de dados
-SQLite (padrão do Django)
+
 ⚙️ Como criar o ambiente virtual
+
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt

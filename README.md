@@ -1,4 +1,4 @@
-# 📌 Projeto Django
+# Projeto Django
 
 Projeto web desenvolvido utilizando o framework Django.
 
@@ -13,7 +13,7 @@ Tecnologias utilizadas:
 
 ---
 
-## ⚙️ Como criar o ambiente virtual
+## Como criar o ambiente virtual
 
 ```bash
 # Criar ambiente virtual
@@ -31,7 +31,7 @@ pip install django
 
 ---
 
-## 🚀 Como criar um projeto Django do zero
+## Como criar um projeto Django do zero
 
 ```bash
 # Criar projeto
@@ -52,7 +52,7 @@ http://127.0.0.1:8000/
 
 ---
 
-## 📦 Como criar um app dentro do projeto
+## Como criar um app dentro do projeto
 
 ```bash
 python manage.py startapp meu_app
@@ -68,7 +68,7 @@ INSTALLED_APPS = [
 
 ---
 
-## 🔄 Aplicar migrações
+## Aplicar migrações
 
 ```bash
 python manage.py makemigrations
@@ -77,21 +77,7 @@ python manage.py migrate
 
 ---
 
-## 👤 Criar superusuário (admin)
-
-```bash
-python manage.py createsuperuser
-```
-
-Acesse:
-
-```
-http://127.0.0.1:8000/admin/
-```
-
----
-
-## ▶️ Como rodar o projeto
+## Como rodar o projeto
 
 ```bash
 # Ativar ambiente virtual

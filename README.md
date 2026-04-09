@@ -1,35 +1,126 @@
-Nome: projeto-django
+# 📌 Projeto Django
 
-Projeto web desenvolvido com Django.
+Projeto web desenvolvido utilizando o framework Django.
 
-🛠 Tecnologias usadas
-Python
-Django
-SQLite
-HTML/CSS
+---
 
-⚙️ Como criar o ambiente virtual
+Tecnologias utilizadas:
+* Python
+* Django
+* HTML
+* CSS
+* SQLite
 
+---
+
+## ⚙️ Como criar o ambiente virtual
+
+```bash
+# Criar ambiente virtual
 python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-🚀 Como rodar o projeto
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
 
-python -m venv venv
+# Ativar no Windows
 venv\Scripts\activate
 
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+# Ativar no Linux/Mac
+source venv/bin/activate
 
-Acesse: http://127.0.0.1:8000
-
-📋 Passos para criar um projeto Django
+# Instalar dependências
 pip install django
+```
+
+---
+
+## 🚀 Como criar um projeto Django do zero
+
+```bash
+# Criar projeto
 django-admin startproject meu_projeto
+
+# Entrar na pasta
 cd meu_projeto
-python manage.py startapp meu_app
-python manage.py migrate
+
+# Rodar o servidor
 python manage.py runserver
+```
+
+Acesse no navegador:
+
+```
+http://127.0.0.1:8000/
+```
+
+---
+
+## 📦 Como criar um app dentro do projeto
+
+```bash
+python manage.py startapp meu_app
+```
+
+Depois, adicione o app no arquivo `settings.py`:
+
+```python
+INSTALLED_APPS = [
+    'meu_app',
+]
+```
+
+---
+
+## 🔄 Aplicar migrações
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+---
+
+## 👤 Criar superusuário (admin)
+
+```bash
+python manage.py createsuperuser
+```
+
+Acesse:
+
+```
+http://127.0.0.1:8000/admin/
+```
+
+---
+
+## ▶️ Como rodar o projeto
+
+```bash
+# Ativar ambiente virtual
+venv\Scripts\activate  # Windows
+# ou
+source venv/bin/activate  # Linux/Mac
+
+# Rodar servidor
+python manage.py runserver
+```
+
+---
+
+## 📁 Estrutura básica do projeto
+
+```
+meu_projeto/
+│
+├── meu_projeto/
+│   ├── settings.py
+│   ├── urls.py
+│   └── asgi.py / wsgi.py
+│
+├── meu_app/
+│   ├── models.py
+│   ├── views.py
+│   ├── admin.py
+│   └── migrations/
+│
+├── manage.py
+```
+
